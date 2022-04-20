@@ -1,0 +1,16 @@
+import traceback
+
+import pandas as pd
+import os
+
+
+def notNone(s, d):
+    if s is None:
+        return d
+    else:
+        return s
+
+
+def create_folders(path):
+    if not os.path.exists(path):
+        os.makedirs(path)
